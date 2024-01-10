@@ -1,0 +1,10 @@
+version: '2'
+services:
+  edgedelta:
+    image: gcr.io/edgedelta/agent:latest
+    restart: always
+    lables:
+      io.balena.features.balena-api: '1'
+    privileged: true
+    volumes:
+      - '/var/run/docker.sock:/var/rundocker.sock:ro'
