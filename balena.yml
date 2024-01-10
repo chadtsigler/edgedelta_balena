@@ -1,0 +1,23 @@
+name: "Edge Delta Balena Agent"
+description: "Next Gen observability platform."
+fleetcta: log collection
+post-provisioning: >-
+  Connect the device to your network (ethernet is best if you have it) and navigate to http://app.edgedelta.com and log in to see your traffic.  Update the required environment variables. 
+type: "sw.application"
+assets:
+  repository:
+    type: "blob.asset"
+    data:
+      url: "https://github.com/chadtsigler/edgedelta_balena"
+  logo:
+    type: "blob.asset"
+    data:
+      url: "https://raw.githubusercontent.com/chadtsigler/edgedelta_balena/master/logo.png"
+data:
+  applicationEnvironmentVariables:
+    - ED_API_KEY: unique_key
+  defaultDeviceType: "raspberrypi3"
+  supportedDeviceTypes:
+    - "raspberrypi4-64"
+    - "raspberrypi3"
+    - "fincm3"
