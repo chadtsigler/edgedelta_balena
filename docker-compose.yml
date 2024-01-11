@@ -4,8 +4,8 @@ services:
     image: gcr.io/edgedelta/agent:latest
     restart: always
     privileged: true
-    volumes:
-      - $DOCKER_HOST:/var/run/docker.sock:ro
+    environment:
+      - DOCKER_HOST=unix:///var/run/docker.sock
     labels:
       io.balena.features.balena-socket: '1'
       
