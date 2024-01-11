@@ -3,6 +3,7 @@ services:
   edgedelta:
     image: gcr.io/edgedelta/agent:latest
     restart: always
+    privileged: true
     labels:
       io.balena.features.balena-socket: '1'
       
