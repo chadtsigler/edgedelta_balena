@@ -1,8 +1,9 @@
-version: '2'
+version: '3'
 services:
   edgedelta:
     image: gcr.io/edgedelta/agent:latest
     restart: always
     privileged: true
     volumes:
-      - '/var/run/docker.sock:/var/rundocker.sock:ro'
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+      
