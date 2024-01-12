@@ -7,4 +7,5 @@ services:
     privileged: true
     labels:
       io.balena.features.balena-socket: '1'
+network_mode: host
       
