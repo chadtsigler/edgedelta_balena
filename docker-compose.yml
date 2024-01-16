@@ -1,11 +1,9 @@
-version: '3'
+version: '2.1'
 services:
   edgedelta:
     image: gcr.io/edgedelta/agent:latest
-    network_mode: host
     restart: always
     privileged: true
     labels:
       io.balena.features.balena-socket: '1'
-network_mode: host
-      
+     
