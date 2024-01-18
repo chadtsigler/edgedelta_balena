@@ -4,6 +4,11 @@ services:
     image: portainer/portainer-ce:latest
     ports:
       - 9443:9443
+    volumes:
+      - data:/data
     restart: unless-stopped
     labels:
       io.balena.features.balena-socket: 1
+volumes:
+  data:
+
