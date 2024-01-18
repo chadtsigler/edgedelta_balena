@@ -1,7 +1,7 @@
 version: "2"
 services:
   ubuntu1:
-    image: ubuntu/ubuntu:latest
+    image: ubuntu/nginx:latest
     restart: unless-stopped
     labels:
       io.balena.features.balena-socket: 1
