@@ -3,6 +3,8 @@ services:
   ubuntu1:
     image: ubuntu/nginx:latest
     restart: unless-stopped
+    ports:
+      - 8080:80
     labels:
       io.balena.features.balena-socket: 1
 
