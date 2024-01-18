@@ -1,14 +1,8 @@
 version: "2"
 services:
-  portainer:
-    image: portainer/portainer-ce:latest
-    ports:
-      - 9443:9443
-    volumes:
-      - data:/data
+  ubuntu1:
+    image: ubuntu/ubuntu:latest
     restart: unless-stopped
     labels:
       io.balena.features.balena-socket: 1
-volumes:
-  data:
 
