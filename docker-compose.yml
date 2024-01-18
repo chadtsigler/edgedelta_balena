@@ -6,4 +6,4 @@ services:
       - 9443:9443
     restart: unless-stopped
     labels:
-      - io.balena.features.balena-socket: 1
+      io.balena.features.balena-socket: 1
