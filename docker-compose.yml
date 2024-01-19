@@ -1,11 +1,11 @@
-version: '2'
+version: '2.1'
 services:
   edgedelta:
     image: gcr.io/edgedelta/agent:balena-test
     privileged: true
     restart: always
     environment:
-      ED_API_KEY: "c61ddba5-2026-47b3-9620-b69d57264d31"
+      ED_API_KEY: "00000000-0000-0000-0000-000000000000"
     labels:
       io.balena.features.balena-socket: '1'
 
