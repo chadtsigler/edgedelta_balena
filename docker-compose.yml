@@ -3,7 +3,6 @@ services:
   edgedelta:
     image: gcr.io/edgedelta/agent:latest
     restart: always
-    privileged: true
     environment:
       ED_API_KEY: "c61ddba5-2026-47b3-9620-b69d57264d31"
     labels:
