@@ -8,4 +8,6 @@ services:
       ED_API_KEY: "c61ddba5-2026-47b3-9620-b69d57264d31"
     labels:
       io.balena.features.balena-socket: '1'
-     
+  ed_gen:
+    image: chadtsigler/ed-gen-nginx:latest
+    restart: always
