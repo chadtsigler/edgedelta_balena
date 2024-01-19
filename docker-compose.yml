@@ -8,4 +8,5 @@ services:
       ED_API_KEY: "00000000-0000-0000-0000-000000000000"
     labels:
       io.balena.features.balena-socket: '1'
-
+  hello-world:
+    image: library/hello-world:latest
